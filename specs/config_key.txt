@@ -1,0 +1,19 @@
+1) x x x - all three options are easily compared
+2.1)
+
+xx 
+
+    x 
+
+2.2)
+
+x
+
+  xx  
+
+Two options are easily compared (counter balanced, but with an equal number of overall trials as 1 and 3).
+
+3) 
+x
+   x
+      x

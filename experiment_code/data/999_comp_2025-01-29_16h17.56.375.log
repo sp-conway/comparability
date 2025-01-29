@@ -1,0 +1,65 @@
+12.8783 	DEBUG 	Fullscreen settings ignored as running in pilot mode.
+12.8796 	INFO 	Loaded monitor calibration from ['2023_04_13 15:13']
+13.1983 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fa0a6347310>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fa0a63472b0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=False, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fa0a6405f40>, multiSample=False, name='window1', numSamples=2, pos=[320.0, 150.0], screen=0, size=array([1600, 1200]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+13.1984 	EXP 	window1: backgroundImage = ''
+13.1985 	EXP 	window1: backgroundFit = 'none'
+13.2125 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2137 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2150 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2167 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2183 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2190 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2202 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2220 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2224 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2230 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2243 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2255 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2267 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2279 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2290 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2303 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2316 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2323 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2331 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2348 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2355 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2361 	DEBUG 	Uploading Texture Font fontname to graphics card
+13.2389 	DEBUG 	Upload of Texture Font fontname complete
+13.2503 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2521 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2539 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.2543 	DEBUG 	Uploading Texture Font fontname to graphics card
+13.2551 	DEBUG 	Upload of Texture Font fontname complete
+13.2582 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+13.2583 	EXP 	window1: recordFrameIntervals = False
+13.8208 	EXP 	window1: recordFrameIntervals = True
+13.8513 	WARNING 	t of last frame was 20.90ms (=1/47)
+14.6804 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+14.6903 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.6911 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.6925 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.6945 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.6963 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.6981 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.6989 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.7005 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.7022 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.7038 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.7043 	DEBUG 	Uploading Texture Font fontname to graphics card
+14.7076 	DEBUG 	Upload of Texture Font fontname complete
+14.7249 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+16.4662 	INFO 	keyboard.Keyboard is using iohub backend.
+16.4663 	EXP 	comp: status = STARTED
+16.4737 	EXP 	Created r_1 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([0.0039, 0.0039, 0.0039]), fillColorSpace='rgb', fillRGB=array([0.0039, 0.0039, 0.0039]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='r_1', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+16.4754 	EXP 	Created r_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([0.0039, 0.0039, 0.0039]), fillColorSpace='rgb', fillRGB=array([0.0039, 0.0039, 0.0039]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='r_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+16.4771 	EXP 	Created r_3 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([0.0039, 0.0039, 0.0039]), fillColorSpace='rgb', fillRGB=array([0.0039, 0.0039, 0.0039]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='r_3', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+18.3411 	EXP 	Created r_1_label = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=5.0, italic=False, languageStyle='LTR', name='r_1_label', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='1', units='height', win=Window(...), wrapWidth=1)
+18.3831 	EXP 	Created r_2_label = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=5.0, italic=False, languageStyle='LTR', name='r_2_label', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='2', units='height', win=Window(...), wrapWidth=1)
+18.4234 	EXP 	Created r_3_label = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=5.0, italic=False, languageStyle='LTR', name='r_3_label', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='3', units='height', win=Window(...), wrapWidth=1)
+22.5725 	DEBUG 	Saving data for comp ExperimentHandler
+22.5732 	INFO 	saved data to /Users/seanconway/Research/Perceptual_CE/comparability/experiment_code/data/999_comp_2025-01-29_16h17.56.375.psydat
+22.5738 	INFO 	saved data to '/Users/seanconway/Research/Perceptual_CE/comparability/experiment_code/data/999_comp_2025-01-29_16h17.56.375.csv'
