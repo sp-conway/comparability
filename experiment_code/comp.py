@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.2.4),
-    on Fri 07 Feb 2025 01:42:59 PM EST
+    on Fri 07 Feb 2025 01:49:04 PM EST
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -126,7 +126,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='/home/shop/experiments/comparability/experiment_code/comp_lastrun.py',
+        originPath='/home/shop/experiments/comparability/experiment_code/comp.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -726,34 +726,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-6.0);
-    print_config = visual.TextStim(win=win, name='print_config',
-        text='',
-        font='Arial',
-        pos=(0, 400), draggable=False, height=40.0, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=1.0, 
-        languageStyle='LTR',
-        depth=-7.0);
-    print_effect = visual.TextStim(win=win, name='print_effect',
-        text='',
-        font='Arial',
-        pos=(0, 350), draggable=False, height=20.0, wrapWidth=None, ori=0.0, 
-        color=[0.0902, -1.0000, -1.0000], colorSpace='rgb', opacity=1.0, 
-        languageStyle='LTR',
-        depth=-8.0);
-    print_config_1 = visual.TextStim(win=win, name='print_config_1',
-        text='',
-        font='Arial',
-        pos=(0, 300), draggable=False, height=40.0, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=1.0, 
-        languageStyle='LTR',
-        depth=-9.0);
-    print_distance = visual.TextStim(win=win, name='print_distance',
-        text='',
-        font='Arial',
-        pos=[0,0], draggable=False, height=40.0, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=1.0, 
-        languageStyle='LTR',
-        depth=-10.0);
     rect_choice = keyboard.Keyboard(deviceName='rect_choice')
     
     # --- Initialize components for Routine "end_block" ---
@@ -2803,7 +2775,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             # create an object to store info about Routine choice_trial
             choice_trial = data.Routine(
                 name='choice_trial',
-                components=[r_1, r_2, r_3, r_1_label, r_2_label, r_3_label, prompt, print_config, print_effect, print_config_1, print_distance, rect_choice],
+                components=[r_1, r_2, r_3, r_1_label, r_2_label, r_3_label, prompt, rect_choice],
             )
             choice_trial.status = NOT_STARTED
             continueRoutine = True
@@ -2819,14 +2791,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             r_2_label.setPos((r_2_txt_x, r_2_txt_y))
             r_3_label.setPos((r_3_txt_x, r_3_txt_y))
             prompt.setPos((prompt_x_loc, prompt_y_loc))
-            print_config.setColor([0.0902, -1.0000, -1.0000], colorSpace='rgb')
-            print_config.setText(config_tmp)
-            print_effect.setText(effect)
-            print_config_1.setColor([0.0902, -1.0000, -1.0000], colorSpace='rgb')
-            print_config_1.setText(config_tmp_1)
-            print_distance.setColor([0.0902, -1.0000, -1.0000], colorSpace='rgb')
-            print_distance.setPos((0, 250))
-            print_distance.setText(distance)
             # create starting attributes for rect_choice
             rect_choice.keys = []
             rect_choice.rt = []
@@ -3001,86 +2965,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 
                 # if prompt is active this frame...
                 if prompt.status == STARTED:
-                    # update params
-                    pass
-                
-                # *print_config* updates
-                
-                # if print_config is starting this frame...
-                if print_config.status == NOT_STARTED and tThisFlip >= isi-frameTolerance:
-                    # keep track of start time/frame for later
-                    print_config.frameNStart = frameN  # exact frame index
-                    print_config.tStart = t  # local t and not account for scr refresh
-                    print_config.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(print_config, 'tStartRefresh')  # time at next scr refresh
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'print_config.started')
-                    # update status
-                    print_config.status = STARTED
-                    print_config.setAutoDraw(True)
-                
-                # if print_config is active this frame...
-                if print_config.status == STARTED:
-                    # update params
-                    pass
-                
-                # *print_effect* updates
-                
-                # if print_effect is starting this frame...
-                if print_effect.status == NOT_STARTED and tThisFlip >= isi-frameTolerance:
-                    # keep track of start time/frame for later
-                    print_effect.frameNStart = frameN  # exact frame index
-                    print_effect.tStart = t  # local t and not account for scr refresh
-                    print_effect.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(print_effect, 'tStartRefresh')  # time at next scr refresh
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'print_effect.started')
-                    # update status
-                    print_effect.status = STARTED
-                    print_effect.setAutoDraw(True)
-                
-                # if print_effect is active this frame...
-                if print_effect.status == STARTED:
-                    # update params
-                    pass
-                
-                # *print_config_1* updates
-                
-                # if print_config_1 is starting this frame...
-                if print_config_1.status == NOT_STARTED and tThisFlip >= isi-frameTolerance:
-                    # keep track of start time/frame for later
-                    print_config_1.frameNStart = frameN  # exact frame index
-                    print_config_1.tStart = t  # local t and not account for scr refresh
-                    print_config_1.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(print_config_1, 'tStartRefresh')  # time at next scr refresh
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'print_config_1.started')
-                    # update status
-                    print_config_1.status = STARTED
-                    print_config_1.setAutoDraw(True)
-                
-                # if print_config_1 is active this frame...
-                if print_config_1.status == STARTED:
-                    # update params
-                    pass
-                
-                # *print_distance* updates
-                
-                # if print_distance is starting this frame...
-                if print_distance.status == NOT_STARTED and tThisFlip >= isi-frameTolerance:
-                    # keep track of start time/frame for later
-                    print_distance.frameNStart = frameN  # exact frame index
-                    print_distance.tStart = t  # local t and not account for scr refresh
-                    print_distance.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(print_distance, 'tStartRefresh')  # time at next scr refresh
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'print_distance.started')
-                    # update status
-                    print_distance.status = STARTED
-                    print_distance.setAutoDraw(True)
-                
-                # if print_distance is active this frame...
-                if print_distance.status == STARTED:
                     # update params
                     pass
                 

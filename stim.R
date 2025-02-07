@@ -22,7 +22,7 @@ w_upper <- rev(h_upper)
 h_lower <- c(57,133)
 w_lower <- rev(h_lower)
 
-# distances are approximately the same across diagonals
+# distances are approximately the same across diagonals9
 distance(h_lower,w_lower)
 distance(h_upper,w_upper)
 
@@ -31,48 +31,40 @@ area_lower <- prod(h_lower)
 area_upper <- prod(h_upper)
 
 # decoy areas - lower diagonal
-area_lower_02 <- area_lower*.98
-area_lower_05 <- area_lower*.95
-area_lower_14 <- area_lower*.86
+area_lower_45 <- area_lower*.55
+area_lower_60 <- area_lower*.40
 
 # make decoys - lower diagonal
-d_lower_02 <- round(rep(sqrt(area_lower_02),2))
-d_lower_05 <- round(rep(sqrt(area_lower_05),2))
-d_lower_14 <- round(rep(sqrt(area_lower_14),2))
+d_lower_45 <- round(rep(sqrt(area_lower_45),2))
+d_lower_60 <- round(rep(sqrt(area_lower_60),2))
 
 # tdd check
-compute_tdd(d_lower_02, area_lower)
-compute_tdd(d_lower_05, area_lower)
-compute_tdd(d_lower_14, area_lower)
+compute_tdd(d_lower_45, area_lower)
+compute_tdd(d_lower_60, area_lower)
 
 # decoy areas - upper diagonal
-area_upper_02 <- area_upper*.98
-area_upper_05 <- area_upper*.95
-area_upper_14 <- area_upper*.86
+area_upper_45 <- area_upper*.55
+area_upper_60 <- area_upper*.40
 
 # make decoys - upper diagonal
-d_upper_02 <- round(rep(sqrt(area_upper_02),2))
-d_upper_05 <- round(rep(sqrt(area_upper_05),2))
-d_upper_14 <- round(rep(sqrt(area_upper_14),2))
+d_upper_45 <- round(rep(sqrt(area_upper_45),2))
+d_upper_60 <- round(rep(sqrt(area_upper_60),2))
 
 # tdd check
-compute_tdd(d_upper_02, area_upper)
-compute_tdd(d_upper_05, area_upper)
-compute_tdd(d_upper_14, area_upper)
+compute_tdd(d_upper_45, area_upper)
+compute_tdd(d_upper_60, area_upper)
 
 # combine stim ======================================================================
 # combine all stim in tmp matrix
 stim_tmp <- rbind(
   "h_lower_0"=h_lower,
   "w_lower_0"=w_lower,
-  "d_lower_02"=d_lower_02,
-  "d_lower_05"=d_lower_05,
-  "d_lower_14"=d_lower_14,
+  "d_lower_45"=d_lower_45,
+  "d_lower_60"=d_lower_60,
   "h_upper_0"=h_upper,
   "w_upper_0"=w_upper,
-  "d_upper_02"=d_upper_02,
-  "d_upper_05"=d_upper_05,
-  "d_upper_14"=d_upper_14
+  "d_upper_45"=d_upper_45,
+  "d_upper_60"=d_upper_60
 )
 
 # combine into nice df
@@ -83,13 +75,14 @@ all_stim <- tibble(
 ) %>%
   separate(name,into=c("name","diag","distance")) %>%
   mutate(distance=as.numeric(distance),
-         distance=na_if(distance,0))
+         distance=na_if(distance,0),
+         area=h*w)
 
 # plotting ======================================================================
 p <- all_stim %>%
   mutate(name=toupper(name)) %>%
   ggplot(aes(w,h,col=name))+
-  geom_point(size=2.5,alpha=.5,pch=16)+
+  geom_point(size=2.5,alpha=.5)+
   labs(x="Width",y="Height")+
   scale_color_discrete(name="Stimulus")+
   scale_x_continuous(breaks=c(0,150,300))+
@@ -128,5 +121,3 @@ plot(NA,NA,xlim=c(0,300),ylim=c(0,300),xlab="w",ylab="h")
 points(w,h,pch=".")
 a <- w*h
 hist(a)
-plot(a,log(w/h),pch=".")
-
